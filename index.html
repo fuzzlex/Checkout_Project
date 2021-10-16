@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout_page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Checkout</h1>
+        </div>
+        <div class="main">
+            <form action="#">
+                <div class="contac-inf">
+                    <h1>Contact information</h1>
+                    <div class="cont-inf_e-mail">                
+                        <label for="email">Email</label><br>
+                        <input type="e-mail" placeholder="Enter your email..." required>
+                        <img class="svgImg" src="Img/email.svg" alt="">                        
+                    </div>
+                    <div class="cont-inf_phone">
+                        <label for="phone">Phone</label><br>
+                        <input type="text" placeholder="Enter your phone..." required>
+                        <img  class="svgImg" src="Img/phone.svg" alt="">
+                    </div>
+                </div>
+                <div class="contac-inf">
+                    <h1>Shipping address</h1>
+                    <div class="shipping-adress_name">                
+                        <label for="name">Full name</label><br>
+                        <input type="e-mail" placeholder="Enter your Full name..." required>
+                        <img  class="svgImg" src="Img/user.svg" alt="">                        
+                    </div>
+                    <div class="shipping-adress_adress">
+                        <label for="adress">Adress</label><br>
+                        <input type="text" placeholder="Enter your adress..." required>
+                        <img class="svgImg"  src="Img/home.svg" alt="">
+                    </div>
+                    <div class="shipping-adress_city">
+                        <label for="city">City</label><br>
+                        <input type="text" placeholder="Enter your adress..." required>             
+                        <img class="svgImg"  src="Img/city.svg" alt="">
+                    </div>
+                    <div class="country-postcode">
+                        <div class="country">
+                            <label for="country">Country</label><br>
+                            <select name="country" id="country">                             
+                                <option value="Turkey" selected>Turkey</option>
+                                <option value="Germany">Germany</option>
+                                <option value="USA">USA</option>
+                                <option value="Canada">Canada</option>
+                                <option value="UK">UK</option>
+                            </select>
+                            <img class="svgImg" src="Img/country.svg" alt="">
+                        </div>
+                        <div class="postCode">
+                            <label for="postcode">Post Code</label><br>
+                            <input type="text" placeholder="Enter your postal Code..." required>             
+                            <img class="svgImg"  src="Img/city.svg" alt="">
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" name="ok" id="ok">
+                            <label for="ok"> See this information next time</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
