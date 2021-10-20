@@ -5,8 +5,8 @@ let subtract2El = document.getElementById("subtract2");
 let numberVin2El = document.getElementById("numberVin2");
 let plus2El = document.getElementById("plus2");
 let totalCheckEl = document.getElementById("totalCheck");
-let i = 1;
-let j = 1;
+let i = 0;
+let j = 0;
 
 
 subtract1El.addEventListener("click", function(){
