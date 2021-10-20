@@ -10,25 +10,26 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>Checkout</h1>
+            <p>Checkout</p>
         </div>
         <div class="main">
             <form action="#">
                 <div class="contac-inf">
-                    <h1>Contact information</h1>
+                    <h3>Contact information</h4>
                     <div class="cont-inf_e-mail">                
                         <label for="email">Email</label><br>
-                        <input type="e-mail" placeholder="Enter your email..." required>
-                        <img class="svgImg" src="Img/email.svg" alt="">                        
+                        <input type="e-mail" placeholder="Enter your email..." required >
+                        <img class="svgImg" src="Img/email.svg" alt=""> 
+                                               
                     </div>
                     <div class="cont-inf_phone">
                         <label for="phone">Phone</label><br>
                         <input type="text" placeholder="Enter your phone..." required>
-                        <img  class="svgImg" src="Img/phone.svg" alt="">
+                        <img class="svgImg" src="Img/phone.svg" alt="">
                     </div>
                 </div>
-                <div class="contac-inf">
-                    <h1>Shipping address</h1>
+                <div class="shipping-adress">
+                    <h3>Shipping address</h4>
                     <div class="shipping-adress_name">                
                         <label for="name">Full name</label><br>
                         <input type="e-mail" placeholder="Enter your Full name..." required>
@@ -56,18 +57,53 @@
                             </select>
                             <img class="svgImg" src="Img/country.svg" alt="">
                         </div>
-                        <div class="postCode">
+                        <div class="postcode">
                             <label for="postcode">Post Code</label><br>
                             <input type="text" placeholder="Enter your postal Code..." required>             
                             <img class="svgImg"  src="Img/city.svg" alt="">
                         </div>
-                        <div class="checkbox">
-                            <input type="checkbox" name="ok" id="ok">
-                            <label for="ok"> See this information next time</label>
+                    </div>
+                <div class="checkbox">
+                        <input type="checkbox" name="ok" id="ok">
+                        <label for="ok">See this information next time</label>
+                </div>
+                </div>
+            </form>
+            <div class="sectionBuy">
+                <div class="containerBuy">
+                    <div class="buy-vintage">
+                        <img class="buyimg" src="Img/photo1.png" alt="">
+                        <div class="buy-vintage_text">
+                            <h3>Vintage Backbag</h3>
+                            <h4>$54.99 <del>$94.99</del></h4>
+                            <div class="buy-vintage_text__button_vintage">
+                                <h4>-</h4><h4>1</h4><h4>+</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buy-levi">
+                        <img src="Img/photo2.png" alt="">
+                        <div class="buy-levi_text">
+                            <h3>Levi Shoes</h3>
+                            <h4>$74.99 <del>$124.99</del></h4>
+                            <div class="buy-levi_text__button_levi">
+                                <h4>-</h4><h4>1</h4><h4>+</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footerBuy">
+                        <div class="shipping">
+                            <h4>Shipping</h4>
+                            <h4>$19</h4>
+                        </div>
+                        <div class="total">
+                            <h4>Total</h4>
+                            <h4>$148.98</h4>
                         </div>
                     </div>
                 </div>
-            </form>
+
+            </div>
         </div>
 
     </div>

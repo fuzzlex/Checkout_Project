@@ -1,5 +1,187 @@
-.svgImg{
-    width: 1rem;
-    opacity: 0.5;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,600;1,400;1,700&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
+
+/* ------header */
+
+.header{
+    text-align: center;
+    font-size: 32px;
+    margin: 15px;
+    font-weight: 700;
+}
+
+
+/* ------main */
+
+
+.main{
+    display: flex;
+    justify-content:space-evenly;
+}
+h3{
+    color: #333333;
+    font-size: 18px;
+}
+
+.contac-inf{
+    margin: 2rem 0rem;  
+
+}
+.cont-inf_e-mail{
+    position: relative;
+    margin-top: 20px;
+    
+}
+.cont-inf_e-mail label{
+    font-size: 14px;
+
+}
+
+.cont-inf_e-mail input{
+    margin: 0.7rem 0rem;
+    width: 30rem;
+    height: 2.3rem;
+    border-radius: 7px;
+    text-indent: 40px;
+    font-size: 12px;
+    border: 1px solid #828282;
+
+}
+.cont-inf_phone{
+    position: relative;
+    
+}
+.cont-inf_phone label{
+    font-size: 14px;
+
+}
+
+.cont-inf_phone input{
+    margin: 0.7rem 0rem;
+    width: 30rem;
+    height: 2.3rem;
+    border-radius: 7px;
+    text-indent: 40px;
+    font-size: 12px;
+    border: 1px solid #828282;
+
+}
+.svgImg{
+    width: 1.2rem;
+    opacity: 0.5;
+    position: absolute;
+    left: 15px;
+    top: 39px; 
+    
+}
+
+
+.shipping-adress_name{
+    position: relative;
+    margin-top: 15px;
+
+    
+}
+.shipping-adress_name label{
+    font-size: 14px;
+
+}
+.shipping-adress_name input{
+    margin: 0.7rem 0rem;
+    width: 30rem;
+    height: 2.3rem;
+    border-radius: 7px;
+    text-indent: 40px;
+    font-size: 12px;
+    border: 1px solid #828282;
+}
+
+.shipping-adress_adress{
+    position: relative;
+
+    
+}
+.shipping-adress_adress label{
+    font-size: 14px;
+
+}
+.shipping-adress_adress input{
+    margin: 0.7rem 0rem;
+    width: 30rem;
+    height: 2.3rem;
+    border-radius: 7px;
+    text-indent: 40px;
+    font-size: 12px;
+    border: 1px solid #828282;
+}
+.shipping-adress_city{
+    position: relative;
+    
+    
+}
+.shipping-adress_city label{
+    font-size: 14px;
+}
+.shipping-adress_city input{
+    margin: 0.7rem 0rem;
+    width: 30rem;
+    height: 2.3rem;
+    border-radius: 7px;
+    text-indent: 40px;
+    font-size: 12px;
+    border: 1px solid #828282;
+}
+.country-postcode{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.country select{
+    margin-top: 10px;
+    width: 8rem;
+    height: 2.3rem;
+    border-radius: 7px;
+    text-indent: 35px;
+    font-weight: 900;
+    border: 1px solid #828282;
+}
+.country label{
+    font-size: 14px;
+}
+.postcode{
+    position: relative;
+}
+.postcode label{
+    font-size: 14px;
+}
+.postcode input{
+    margin: 0.7rem 0rem;
+    width: 20rem;
+    height: 2.3rem;
+    border-radius: 7px;
+    text-indent: 40px;
+    font-size: 12px;
+    border: 1px solid #828282;
+}
+.checkbox{
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.sectionBuy{
+    background-color: #EEEEEE;
+    width: 25rem;
+    height: 30rem;
+    border-radius: 15px;
+}
+.buy-vintage{
+    display: flex;
+}
