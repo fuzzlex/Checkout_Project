@@ -7,6 +7,8 @@
     box-sizing: border-box;
 }
 
+@media screen and (max-width:1450px) {
+    
 
 
 /* ------header */
@@ -327,3 +329,16 @@ del{
     margin: 1rem 0.8rem;
 }
 
+}
+@media screen and (max-width:900px) {
+    .main{
+        flex-wrap: wrap;
+    }
+    form{
+        order:1;
+        margin: 0px 10%;
+    }
+    .sectionBuy{
+        order: 0;
+    }
+}
