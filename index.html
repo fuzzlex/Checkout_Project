@@ -74,38 +74,48 @@
             </form>
             <div class="sectionBuy">
                 <div class="containerBuy">
-                    <div class="buy-vintage">
+                    <div class="buy-vintage" id="products">
                         <img class="buyimg" src="Img/photo1.png" alt="">
                         <div class="buy-vintage_text">
                             <h3>Vintage Backbag</h3>
-                            <h4>$54.99 <del>$94.99</del></h4>
-                            <div class="buy-vintage_text__button_vintage">
-                                <h5 id="subtract1">-</h5>
-                                <h5 id="numberVin1">0</h5>
-                                <h5 id="plus1">+</h5>
+                            <h4>$<strong>58.99</strong> <del>$94.99</del></h4>
+                            <div class="buy-vintage_text__button_vintage productEl">
+                                <h5  id="subtract1" class="eksi">-</h5>
+                                <h5 id="numberVin">1</h5>
+                                <h5 id="plus1" class="plusEl">+</h5>
                             </div>
+                            <h3 class="totalPriceProduct">Total : $<strong>58.99</strong></h3> 
                         </div>
                     </div>
-                    <div class="buy-levi">
+                    <div class="buy-levi" id="products">
                         <img class="buyimg"src="Img/photo2.png" alt="">
                         <div class="buy-levi_text">
                             <h3>Levi Shoes</h3>
-                            <h4>$74.99 <del>$124.99</del></h4>
-                            <div class="buy-levi_text__button_levi">
-                                <h5 id="subtract2">-</h5>
-                                <h5 id="numberVin2">0</h5>
-                                <h5 id="plus2">+</h5>
+                            <h4>$<strong>78.99</strong> <del>$124.99</del></h4>
+                            <div class="buy-levi_text__button_levi productEl">
+                                <h5  id="subtract2"  class="eksi">-</h5>
+                                <h5 id="numberVin">1</h5>
+                                <h5 id="plus2" class="plusEl">+</h5>
                             </div>
+                            <h3 class="totalPriceProduct">Total : $<strong>78.99</strong></h3>
                         </div>
                     </div>
                     <div class="footerBuy">
-                        <div class="shipping">
+                        <div class="shipping" id="ship">
                             <h4>Shipping</h4>
-                            <h4 >$19</h4>
+                            <h4 >0</h4>
                         </div>
                         <div class="total">
                             <h4>Total</h4>
-                            <h4 id="totalCheck">$0</h4>
+                            <h4 id="totalCheck">$<strong>0</strong></h4>
+                        </div>
+                        <div class="shipping" id="tax">
+                            <h4>Tax(%18)</h4>
+                            <h4 >0</h4>
+                        </div>
+                        <div class="shipping cartTotal">
+                            <h4>Cart-Total</h4>
+                            <h4 >0</h4>
                         </div>
                     </div>
                 </div>

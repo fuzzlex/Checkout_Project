@@ -1,32 +1,54 @@
-let subtract1El = document.getElementById("subtract1");
-let numberVin1El = document.getElementById("numberVin1");
-let plus1El = document.getElementById("plus1");
-let subtract2El = document.getElementById("subtract2");
-let numberVin2El = document.getElementById("numberVin2");
-let plus2El = document.getElementById("plus2");
-let totalCheckEl = document.getElementById("totalCheck");
-let i = 0;
-let j = 0;
+let productEL = document.querySelectorAll(".productEl")
+const taxRate = 0.18;
+const shippingPrice = 15.0;
+window.onload = () => {
+
+    localStorage.getItem("taxRate", taxRate)
+    localStorage.getItem("shippingPrice", shippingPrice)
+    calculateTotal()}
 
 
-subtract1El.addEventListener("click", function(){
-    i--;
-    if(i <= 0){numberVin1El.innerHTML = 0;i = 0;}else{numberVin1El.innerHTML = i;};
-    totalCheckEl.innerHTML = "$" + Number(Number(i * 54.99) + Number(j * 74.99) + 19).toFixed(2);
 
-})
-plus1El.addEventListener("click", function(){
-    i++;
-    if(i <= 0){numberVin1El.innerHTML = 0;i = 0;}else{numberVin1El.innerHTML = i;}
-    totalCheckEl.innerHTML = "$" + Number(Number(i * 54.99) + Number(j * 74.99) + 19).toFixed(2);
-})
-subtract2El.addEventListener("click", function(){
-    j--;
-    if(j <= 0){numberVin2El.innerHTML = 0;j = 0;}else{numberVin2El.innerHTML = j;}
-    totalCheckEl.innerHTML = "$" + Number(Number(i * 54.99) + Number(j * 74.99) + 19).toFixed(2);
-})
-plus2El.addEventListener("click", function(){
-    j++;
-    if(j <= 0){numberVin2El.innerHTML = 0;j = 0;}else{numberVin2El.innerHTML = j;}
-    totalCheckEl.innerHTML = "$" + Number(Number(i * 54.99) + Number(j * 74.99) + 19).toFixed(2);
-})
+productEL.forEach(element => {
+    element.addEventListener("click", (e)=>{      
+        if(e.target.classList.contains("eksi")) {          
+            if(parseInt(element.children[1].textContent) > 0){ 
+             element.children[1].textContent = parseInt(element.children[1].textContent) -1;
+             calculate(parseInt(element.children[1].textContent))}
+             
+            if(parseInt(element.children[1].textContent) == 0){
+                alert("Product will be removed Are you sure !!")
+                element.parentElement.parentElement.remove(); }        }
+        else if(e.target.classList.contains("plusEl")) {          
+             element.children[1].textContent = parseInt(element.children[1].textContent) +1;
+             calculate(parseInt(element.children[1].textContent))}
+    })
+    const calculate = (num) =>{
+        let productSale = parseFloat(element.previousElementSibling.firstElementChild.textContent).toFixed(2);
+        element.nextElementSibling.firstElementChild.textContent =  (num * productSale).toFixed(2);
+        calculateTotal()
+    }
+    
+});
+
+
+const calculateTotal = () =>{
+    let scale = 0;
+    let totalEl = document.querySelectorAll(".totalPriceProduct");
+    let totalPrice =document.getElementById("totalCheck");
+    totalEl.forEach(e =>{
+  scale += parseFloat(e.firstElementChild.textContent)       
+    })
+    let totalScale = scale.toFixed(2)
+    totalPrice.textContent = "$" + totalScale; 
+    let shipping = (totalScale > 0 ? shippingPrice: 0);
+    let totalTax = parseFloat(totalScale * taxRate).toFixed(2);
+    let cartTotal = parseFloat(totalScale) + parseFloat(totalTax) + parseFloat(shipping);
+    document.querySelector("#tax").lastElementChild.textContent ="$" +  totalTax;  
+    document.querySelector("#ship").lastElementChild.textContent = "$" + shipping;
+    document.querySelector(".cartTotal").lastElementChild.textContent = "$" + cartTotal.toFixed(2);
+
+}
+
+ 
+

@@ -201,7 +201,6 @@ h3{
     margin: 2rem;
     background-color: #EEEEEE;
     width: 25rem;
-    height: 32rem;
     border-radius: 15px;
 }
 .buy-vintage{
@@ -259,7 +258,6 @@ del{
     align-items: center;
     justify-content: center;
 }
-
 
 .buy-levi{
     display: flex;
